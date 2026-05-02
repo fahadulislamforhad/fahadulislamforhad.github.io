@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <title>Fahadul Islam Forhad</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#f7f9fb",
+                        "on-primary-fixed": "#131b2e",
+                        "tertiary": "#000000",
+                        "on-tertiary-fixed": "#001f26",
+                        "primary-fixed": "#dae2fd",
+                        "outline": "#76777d",
+                        "primary-fixed-dim": "#bec6e0",
+                        "surface-tint": "#565e74",
+                        "on-secondary-container": "#54647a",
+                        "tertiary-container": "#001f26",
+                        "tertiary-fixed": "#acedff",
+                        "on-background": "#191c1e",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "surface-bright": "#f7f9fb",
+                        "primary": "#000000",
+                        "surface-container-highest": "#e0e3e5",
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "on-surface-variant": "#45464d",
+                        "on-secondary-fixed": "#0b1c30",
+                        "surface-container-high": "#e6e8ea",
+                        "inverse-primary": "#bec6e0",
+                        "on-tertiary-fixed-variant": "#004e5c",
+                        "surface-variant": "#e0e3e5",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#d3e4fe",
+                        "surface-container": "#eceef0",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "background": "#f7f9fb",
+                        "secondary": "#505f76",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#131b2e",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c6c6cd",
+                        "secondary-container": "#d0e1fb",
+                        "on-primary-container": "#7c839b",
+                        "tertiary-fixed-dim": "#4cd7f6",
+                        "on-surface": "#191c1e",
+                        "inverse-surface": "#2d3133",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#d8dadc",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "surface-container-low": "#f2f4f6",
+                        "on-tertiary-container": "#0090a9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "sm": "1rem",
+                        "xs": "0.5rem",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "lg": "3rem",
+                        "xl": "5rem",
+                        "md": "1.5rem",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Manrope"],
+                        "label-bold": ["Inter"],
+                        "display-xl": ["Manrope"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Manrope"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["36px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-bold": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-xl": ["60px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-header {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+
+<body class="bg-surface font-body-md text-on-surface antialiased">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200/50 shadow-sm">
+        <div class="flex justify-between items-center h-20 px-6 md:px-12 max-w-[1280px] mx-auto">
+            <div class="text-xl font-black tracking-tighter text-slate-900">Fahadul Islam Forhad</div>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-slate-600 font-medium hover:text-teal-600 transition-colors" href="/">Home</a>
+                <a class="text-slate-600 font-medium hover:text-teal-600 transition-colors"
+                    href="services.html">Services</a>
+                <a class="text-slate-600 font-medium hover:text-teal-600 transition-colors" href="about.html">About</a>
+                <a class="text-teal-600 font-bold border-b-2 border-teal-600 pb-1" href="case-studies.html">Case
+                    Studies</a>
+                <a class="text-slate-600 font-medium hover:text-teal-600 transition-colors"
+                    href="contact.html">Contact</a>
+            </div>
+            <button
+                class="bg-on-primary-fixed text-white px-6 py-2.5 rounded-xl font-label-bold hover:opacity-90 active:scale-95 transition-all duration-200">
+                Free Audit
+            </button>
+        </div>
+    </nav>
+    <main class="pt-32 pb-xl px-6">
+        <div class="max-w-[1280px] mx-auto">
+            <!-- Hero Header -->
+            <header class="mb-xl text-center md:text-left">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 bg-secondary-container text-on-tertiary-container rounded-full mb-md">
+                    <span class="material-symbols-outlined text-[16px]">verified</span>
+                    <span class="font-label-bold text-[12px] tracking-widest uppercase">Proven Track Record</span>
+                </div>
+                <h1 class="font-display-xl text-display-xl text-on-primary-fixed mb-sm">Case Studies &amp; Success
+                    Stories</h1>
+                <p class="font-body-lg text-body-lg text-secondary max-w-2xl">Discover how we leverage data-driven
+                    strategies across Meta and Google Ads to deliver exceptional ROAS and lead volume for global
+                    clients.</p>
+            </header>
+            <!-- Bento Case Studies Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+                <!-- Large Featured Case Study -->
+                <div
+                    class="lg:col-span-8 group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-outline-variant/30">
+                    <div class="grid md:grid-cols-2 h-full">
+                        <div class="p-lg flex flex-col justify-between">
+                            <div>
+                                <img alt="Shopify" class="h-8 mb-md grayscale group-hover:grayscale-0 transition-all"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuChaZqXWGuGjeTvNjXGwGdkO-JgHI9imlJeNwWaJbHu-E9rhXaPHaTvxN1boQPQQqKy3rFK_PlBNApSr73BHqbMaBko9VL_CN2AHZJRRmJ_EKeELNGinmofHgHejWE9ZxDORk1pdsM41KpWjxJxNmBMsNWp9xJvFdZQXAhEM8_zqOZdDSXcwiFeCZp8ix-EFnDLVjycPacDRtE_BjhnCdpQ4FHEKNnyULW89o3-eQnwUZmu_CYYDkkQUzzo1ymlWCY8AeAwJcqgCg" />
+                                <h3 class="font-headline-lg text-headline-lg text-on-primary-fixed mb-sm">E-commerce
+                                    Scaling Project</h3>
+                                <p class="font-body-md text-body-md text-secondary mb-md">Scaling a D2C lifestyle brand
+                                    from $50k to $500k monthly revenue using advanced Meta Ads prospecting and retention
+                                    funnels.</p>
+                                <div class="flex flex-wrap gap-xs mb-lg">
+                                    <span
+                                        class="px-3 py-1 bg-surface-container text-on-surface-variant font-label-bold rounded-full text-[12px]">Meta
+                                        Ads</span>
+                                    <span
+                                        class="px-3 py-1 bg-surface-container text-on-surface-variant font-label-bold rounded-full text-[12px]">D2C
+                                        Strategy</span>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-md border-t border-outline-variant/30 pt-md">
+                                <div>
+                                    <p class="text-teal-600 font-display-xl text-[32px]">8.4x</p>
+                                    <p class="font-label-bold text-secondary uppercase text-[10px]">Average ROAS</p>
+                                </div>
+                                <div>
+                                    <p class="text-teal-600 font-display-xl text-[32px]">+420%</p>
+                                    <p class="font-label-bold text-secondary uppercase text-[10px]">Revenue Growth</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative min-h-[300px] overflow-hidden">
+                            <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="A professional, high-end close-up of a sleek tablet displaying colorful data visualization charts and e-commerce analytics. The lighting is crisp and modern, reflecting off the glass surface. The surrounding environment is a minimalist, white-themed creative studio with soft depth of field. The palette features deep navy and vibrant teal accents, embodying a sophisticated digital marketing aesthetic."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyfgoLXlkUs_ogUKc0YA7wNgYYUUfIUnAHJpaG5k0TtARLQqXUrcge720gFl5Bx5RFjxSSmj6ST6tlcu83mBKmfL2H-AAsmHYxVjEg5dk2E_cRf3Ch9_LKuPp2JpacGQoApNyffyaigUkJnYeI3fPE7dIDARDZYZRnUGBqGWiXqSKax_axm38VX2NpKQO0EJQcM1Aj0e_WPgurXwx0f5xn83Fr_y7gRl_d9ph8ovadUIhww8Iq9ayLN208ozh1OHG6zbl_fWEd9g" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Secondary Case Study -->
+                <div
+                    class="lg:col-span-4 group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-outline-variant/30 p-lg">
+                    <img alt="SaaS" class="h-8 mb-md grayscale group-hover:grayscale-0 transition-all"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV_cU8CVX9EoJxqgABQIkHXL2izRvgY3nMhW4RDakh-ubqMHZB-8TczIwBjUoPZb2S7ZybI_2AgEpAnnAkcqor1xbCpm36yYi1S8r6HOJXNJhSOjHqqctZTBzFgqMHY0Y3kZI-ojctaYIeSTOGnoCBu0Il8VXO6wEkgzTbzaWUzLM8iSL_CPSzrgu-iZHruWxYQ7uWZb9DbXaYSpaQ2bRD3JVZKBYuWKmM4rLNcAKBE7TjNO09DOnHIV_vQba9ga6PXaNYgUFt5A" />
+                    <h3 class="font-headline-md text-headline-md text-on-primary-fixed mb-sm">B2B Lead Gen Optimization
+                    </h3>
+                    <p class="font-body-md text-body-md text-secondary mb-lg">Optimizing Google Search campaigns to
+                        lower CPL by 45% while increasing MQL quality for a high-ticket SaaS platform.</p>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center p-md bg-surface-container-low rounded-xl">
+                            <span class="font-label-bold text-secondary">Lead Volume</span>
+                            <span class="font-headline-md text-teal-600">+112%</span>
+                        </div>
+                        <div class="flex justify-between items-center p-md bg-surface-container-low rounded-xl">
+                            <span class="font-label-bold text-secondary">Cost Per Lead</span>
+                            <span class="font-headline-md text-teal-600">-45%</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Standard Grid Items -->
+                <div
+                    class="lg:col-span-4 group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-outline-variant/30 p-lg">
+                    <img alt="Travel" class="h-8 mb-md grayscale group-hover:grayscale-0 transition-all"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk3QsnWlGpWmurGcYE8lMl2M6NNXfM5F-a_KLs0YWuAhxUk2Yd_uNWNOP03EMlXcUJT6XSq1LGm4S1GrMsmG_b70biANcX5pCEEzftHO1Et3EDQAQLNWPd7jMod9F2K4GW2sS8cVyfjY6iZs0gxEU6jFqrmBFNpCMPrrhnpPZZA7zlPIqcmQxiiblUCYrBV0B3-UQ6Sl7xRhDzFFBE6YhaxxnJK8hq6z4CUqLZmHDt3Hxp2KyNeXtg4zyObzyCMyLKqSfRGWHB6g" />
+                    <h3 class="font-headline-md text-headline-md text-on-primary-fixed mb-sm">Travel &amp; Hospitality
+                        Pivot</h3>
+                    <p class="font-body-md text-body-md text-secondary mb-md">Retargeting strategy overhaul that
+                        recovered 30% of abandoned bookings during peak season.</p>
+                    <div class="flex items-baseline gap-2 mb-lg">
+                        <span class="font-display-xl text-[28px] text-teal-600">5.2x</span>
+                        <span class="font-label-bold text-secondary">ROAS</span>
+                    </div>
+                    <div class="bg-surface-variant h-1 w-full rounded-full overflow-hidden">
+                        <div class="bg-teal-600 h-full w-[85%]"></div>
+                    </div>
+                </div>
+                <div
+                    class="lg:col-span-4 group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-outline-variant/30 p-lg">
+                    <img alt="Retail" class="h-8 mb-md grayscale group-hover:grayscale-0 transition-all"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuARa6p6vFH4iBzzFd_G_8sqMLC8gEURacHjzQwZU_5EpQfUbePWhxbT-SEoKlZjeAEG5qjnRg2Y67PhSSfJVDGHFdRO5zAIg4feqiWGLUvOAsdJeYM8r2f9i2Mpg61rel1uCDOxHt7hNArN35PSWDAl23md8uwuXxbaMoXAYjgWAPjrWakmjzoragkciFZK_wqnCaq78Pl3CQ5SjJS9z-HRw0hEs8GMC5HGuxuGggUDynICI6zqtUVtl9usDgQobDUESI7G4rJhVA" />
+                    <h3 class="font-headline-md text-headline-md text-on-primary-fixed mb-sm">Omnichannel Retail Growth
+                    </h3>
+                    <p class="font-body-md text-body-md text-secondary mb-md">Integrating offline sales data with Meta
+                        Conversion API to improve attribution accuracy by 25%.</p>
+                    <div class="flex items-baseline gap-2 mb-lg">
+                        <span class="font-display-xl text-[28px] text-teal-600">+35%</span>
+                        <span class="font-label-bold text-secondary">Efficiency</span>
+                    </div>
+                    <div class="bg-surface-variant h-1 w-full rounded-full overflow-hidden">
+                        <div class="bg-teal-600 h-full w-[70%]"></div>
+                    </div>
+                </div>
+                <div
+                    class="lg:col-span-4 group bg-on-primary-fixed rounded-xl shadow-lg p-lg flex flex-col justify-between text-white">
+                    <div>
+                        <h3 class="font-headline-md text-headline-md mb-sm">Your Success Story Starts Here</h3>
+                        <p class="font-body-md text-on-primary-container mb-lg">Let's replicate these results for your
+                            business. Book a free audit to see the untapped potential in your ad accounts.</p>
+                    </div>
+                    <button
+                        class="w-full bg-teal-600 text-white font-label-bold py-4 rounded-xl hover:bg-teal-500 transition-colors flex items-center justify-center gap-2">
+                        Get Your Free Audit
+                        <span class="material-symbols-outlined">trending_up</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Client Logo Cloud -->
+            <section class="mt-xl py-lg border-t border-outline-variant/20">
+                <p class="text-center font-label-bold text-secondary mb-lg uppercase tracking-widest text-[12px]">
+                    Trusted By Innovative Brands Globally</p>
+                <div class="flex flex-wrap justify-center items-center gap-xl opacity-50 grayscale">
+                    <img alt="Hubspot" class="h-8"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJPR8DGRlla1jLB16etMaDJY_QwSKew3-q4OHHy1bxLbf3vLIlZ7vygaHHi07NsZNCovZDia-3-qmeXImU1Rw8DhPLrt8FTCwphldhDijebMAAT5YRE2NoUrjCBPpVCAnZmTMwt21xsOEZAs9_fWsPW3hSFPKqNvS1kFr-Bjgx2pzMt2Ykj1igVEkRHzeN5jLku7gi6k9ptTACj6ES2H3oNVsiXIJTftEkiL8_XlmWbblmVkAnq7fbbVD1pLnm_3ZdvdLKm0TDPg" />
+                    <img alt="Stripe" class="h-8"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu57nGu-Rlby9FEHLTA2rr_XEQeDtRMlUwv_aA-D-_Nzndc05BomWVCJ8hnqJY3vO4jAECg-_AU5uuTZyNt5fc7USMbj_i3tSw01TxiTJMCHdQXKlKidz3-Wq6GQ0u2A0sep8h7L2uioAW8YLgOIC5bbrKjF3STOrxgISbsYI9CPlHwqqq-qssgN7Fjijgv887b8ilxz0tj8PJlWdthWI0mT8QlYb1YMIrq0s_u4SJQZGD5Va4YX_euyjjmwe0k0hkexi-JBsI3w" />
+                    <img alt="Monday" class="h-8"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlN9rXAfSjA1x6g-0eACVaL1j8wydf-bt72LaiyUGharLDjj7t5jgYCX9Wr-osD39UeRWwYbxGpTt35psTN7LPfj0Ok4IO9xMeo6L-LPZxS-YT3RmvGMjQWzagVqtzE-7YxGiLEqwatYlaSCVIGxEOQ0C24HZBXs4BfGouxXiR5REX3uH3zAJejQlvyzeeXgUgz8wyBdpukEN1yOPRlgG8g_td4Ram22rFEbmzWgLYYSCVC6El7-qMgxmhtYyWPfa6IAoLo6a3Tw" />
+                    <img alt="Intercom" class="h-8"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo2m7zi9hXOsJEs56u04vjEUnYVZ3VOvhhOyFhBbbTQY576l4mcrLImgAKlrO5AhgeLr8BVyKUuk25NAl_NSodoGu7At3vn8kEH8LCLzXB1H3nHKwgkJWTWUTBmZi_IEnEIeb1gSRgtZcozAmeBsDMxZyaq-_o5Q0kgpaoIa1-0vPg_NJVEk6lwazpA_QDFiIwQ3oisFWhgfTt8jjYbRhVq6uQd5QxvbpEWk6nk7RvRw_AbA66HicyM9wO_g5MjWjrq1BuDzGPWA" />
+                    <img alt="Webflow" class="h-8"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdGoJM3cyo2DlLaNUhrh9raIf402DffPN2rQGkV5w_pSOvHiq792fbRAuZewK6blj9pRynanN7GXNxyT-WSE8acBmLwrH2xvU84C2MboeZFVyPUoiIOpvP9KuI7Bj6kdBzeyRo-29U5i7PEDsVyIjd2U83so93RQpbMIWqRu-FORPUEhfQKJj2W8r5CiDOksjW_MRTLrjcnBAM43_ET1n4TXyfronpF2d3GpXVjxUcjp3fnttdQhF4eVIThD6jPj1mtS7HPkThtw" />
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full py-12 bg-slate-50 border-t border-slate-200">
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:flex lg:justify-between items-center px-6 md:px-12 max-w-[1280px] mx-auto gap-8">
+            <div>
+                <div class="text-lg font-bold text-slate-900 mb-2">Fahadul Islam Forhad</div>
+                <p class="font-['Manrope'] text-sm text-slate-500 italic">© 2026 Fahadul Islam Forhad. Strategic Digital
+                    Growth.</p>
+            </div>
+            <div class="flex flex-wrap gap-6">
+                <a class="font-['Manrope'] text-sm text-slate-500 hover:text-teal-600 hover:underline transition-all"
+                    href="#">Services</a>
+                <a class="font-['Manrope'] text-sm text-teal-600 font-semibold hover:underline transition-all"
+                    href="#">Case Studies</a>
+                <a class="font-['Manrope'] text-sm text-slate-500 hover:text-teal-600 hover:underline transition-all"
+                    href="#">Privacy Policy</a>
+                <a class="font-['Manrope'] text-sm text-slate-500 hover:text-teal-600 hover:underline transition-all"
+                    href="#">LinkedIn</a>
+                <a class="font-['Manrope'] text-sm text-slate-500 hover:text-teal-600 hover:underline transition-all"
+                    href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

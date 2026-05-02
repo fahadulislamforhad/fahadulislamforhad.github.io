@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <title>Fahadul Islam Forhad</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#f7f9fb",
+                        "on-primary-fixed": "#131b2e",
+                        "tertiary": "#000000",
+                        "on-tertiary-fixed": "#001f26",
+                        "primary-fixed": "#dae2fd",
+                        "outline": "#76777d",
+                        "primary-fixed-dim": "#bec6e0",
+                        "surface-tint": "#565e74",
+                        "on-secondary-container": "#54647a",
+                        "tertiary-container": "#001f26",
+                        "tertiary-fixed": "#acedff",
+                        "on-background": "#191c1e",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "surface-bright": "#f7f9fb",
+                        "primary": "#000000",
+                        "surface-container-highest": "#e0e3e5",
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "on-surface-variant": "#45464d",
+                        "on-secondary-fixed": "#0b1c30",
+                        "surface-container-high": "#e6e8ea",
+                        "inverse-primary": "#bec6e0",
+                        "on-tertiary-fixed-variant": "#004e5c",
+                        "surface-variant": "#e0e3e5",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#d3e4fe",
+                        "surface-container": "#eceef0",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "background": "#f7f9fb",
+                        "secondary": "#505f76",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#131b2e",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c6c6cd",
+                        "secondary-container": "#d0e1fb",
+                        "on-primary-container": "#7c839b",
+                        "tertiary-fixed-dim": "#4cd7f6",
+                        "on-surface": "#191c1e",
+                        "inverse-surface": "#2d3133",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#d8dadc",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "surface-container-low": "#f2f4f6",
+                        "on-tertiary-container": "#0090a9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "sm": "1rem",
+                        "xs": "0.5rem",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "lg": "3rem",
+                        "xl": "5rem",
+                        "md": "1.5rem",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Manrope"],
+                        "label-bold": ["Inter"],
+                        "display-xl": ["Manrope"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Manrope"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["36px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-bold": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-xl": ["60px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .teal-accent {
+            color: #0d9488;
+        }
+
+        .bg-teal-accent {
+            background-color: #0d9488;
+        }
+
+        .border-teal-accent {
+            border-color: #0d9488;
+        }
+    </style>
+</head>
+
+<body class="bg-surface font-body-md text-on-surface antialiased">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200/50 dark:border-slate-800/50 shadow-sm dark:shadow-none">
+        <div class="flex justify-between items-center h-20 px-6 md:px-12 max-w-[1280px] mx-auto">
+            <span class="text-xl font-black tracking-tighter text-slate-900 dark:text-white font-headline-lg">Fahadul
+                Islam Forhad</span>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-slate-600 dark:text-slate-400 font-medium hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+                    href="/">Home</a>
+                <a class="text-slate-600 dark:text-slate-400 font-medium hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+                    href="services.html">Services</a>
+                <a class="text-slate-600 dark:text-slate-400 font-medium hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+                    href="about.html">About</a>
+                <a class="text-slate-600 dark:text-slate-400 font-medium hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+                    href="case-studies.html">Case Studies</a>
+                <a class="text-teal-600 dark:text-teal-400 font-bold border-b-2 border-teal-600 dark:border-teal-400 pb-1"
+                    href="contact.html">Contact</a>
+            </div>
+            <button
+                class="bg-teal-accent text-white px-6 py-2.5 rounded-xl font-label-bold hover:opacity-90 transition-all duration-200 active:scale-95">
+                Free Audit
+            </button>
+        </div>
+    </nav>
+    <main class="pt-32 pb-xl">
+        <div class="max-w-[1280px] mx-auto px-6 md:px-12">
+            <!-- Hero Header -->
+            <div class="mb-xl max-w-2xl">
+                <span
+                    class="inline-block px-3 py-1 bg-teal-accent/10 text-teal-600 rounded-full font-label-bold text-xs mb-4 uppercase tracking-widest">Let's
+                    Connect</span>
+                <h1 class="font-display-xl text-display-xl text-on-primary-fixed mb-6">Ready to scale your digital
+                    growth?</h1>
+                <p class="font-body-lg text-body-lg text-secondary max-w-xl">Whether you have a specific project in mind
+                    or just want to explore possibilities, I'm here to help you navigate the digital landscape.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Contact Form Section -->
+                <div class="lg:col-span-7">
+                    <div
+                        class="bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-sm border border-outline-variant">
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="font-label-bold text-on-surface-variant block">Full Name</label>
+                                    <input
+                                        class="w-full bg-surface border border-outline-variant rounded-xl px-4 py-3 focus:ring-2 focus:ring-teal-accent/20 focus:border-teal-accent transition-all outline-none"
+                                        placeholder="John Doe" type="text" />
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="font-label-bold text-on-surface-variant block">Email Address</label>
+                                    <input
+                                        class="w-full bg-surface border border-outline-variant rounded-xl px-4 py-3 focus:ring-2 focus:ring-teal-accent/20 focus:border-teal-accent transition-all outline-none"
+                                        placeholder="john@company.com" type="email" />
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="font-label-bold text-on-surface-variant block">Website URL</label>
+                                <input
+                                    class="w-full bg-surface border border-outline-variant rounded-xl px-4 py-3 focus:ring-2 focus:ring-teal-accent/20 focus:border-teal-accent transition-all outline-none"
+                                    placeholder="https://yourwebsite.com" type="url" />
+                            </div>
+                            <div class="space-y-2">
+                                <label class="font-label-bold text-on-surface-variant block">Your Message</label>
+                                <textarea
+                                    class="w-full bg-surface border border-outline-variant rounded-xl px-4 py-3 focus:ring-2 focus:ring-teal-accent/20 focus:border-teal-accent transition-all outline-none resize-none"
+                                    placeholder="Tell me about your business goals..." rows="5"></textarea>
+                            </div>
+                            <button
+                                class="w-full bg-tertiary text-on-tertiary font-label-bold py-4 rounded-xl hover:opacity-90 transition-all active:scale-[0.98] flex justify-center items-center gap-2"
+                                type="submit">
+                                Send Message
+                                <span class="material-symbols-outlined text-sm" data-icon="send">send</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Info Sidebar -->
+                <div class="lg:col-span-5 space-y-8">
+                    <!-- Direct Contact -->
+                    <div class="bg-surface-container p-8 rounded-xl space-y-6">
+                        <h3 class="font-headline-md text-headline-md text-on-primary-fixed">Direct Contact</h3>
+                        <div class="space-y-4">
+                            <a class="flex items-center gap-4 group" href="mailto:hello@fahadul.me">
+                                <div
+                                    class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm group-hover:bg-teal-accent group-hover:text-white transition-all">
+                                    <span class="material-symbols-outlined" data-icon="mail">mail</span>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-label-bold text-on-surface-variant uppercase tracking-wider">
+                                        Email</p>
+                                    <p class="font-body-md text-teal-600 font-semibold">hello@fahadul.me</p>
+                                </div>
+                            </a>
+                            <a class="flex items-center gap-4 group" href="https://linkedin.com">
+                                <div
+                                    class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm group-hover:bg-teal-accent group-hover:text-white transition-all">
+                                    <span class="material-symbols-outlined" data-icon="share">share</span>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-label-bold text-on-surface-variant uppercase tracking-wider">
+                                        LinkedIn</p>
+                                    <p class="font-body-md text-teal-600 font-semibold">Connect on LinkedIn</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Call Widget Placeholder -->
+                    <div class="relative overflow-hidden bg-on-primary-fixed text-white p-8 rounded-xl group">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="material-symbols-outlined text-6xl"
+                                data-icon="calendar_month">calendar_month</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md mb-2 relative z-10">Prefer to talk?</h3>
+                        <p class="font-body-md opacity-80 mb-6 relative z-10">Skip the email and grab a 15-minute slot
+                            on my calendar to discuss your growth strategy.</p>
+                        <div class="bg-white/5 border border-white/10 rounded-xl p-4 mb-6 backdrop-blur-sm">
+                            <div class="flex items-center gap-3 text-sm font-label-bold">
+                                <div class="w-2 h-2 rounded-full bg-teal-400 animate-pulse"></div>
+                                Next Available: Tomorrow, 10:00 AM
+                            </div>
+                        </div>
+                        <button
+                            class="w-full bg-teal-accent text-white py-4 rounded-xl font-label-bold hover:brightness-110 transition-all flex justify-center items-center gap-2">
+                            Schedule a Call
+                            <span class="material-symbols-outlined text-sm"
+                                data-icon="arrow_forward">arrow_forward</span>
+                        </button>
+                    </div>
+                    <!-- Trust Factor -->
+                    <div class="flex items-center gap-4 px-2">
+                        <div class="flex -space-x-3">
+                            <img class="w-10 h-10 rounded-full border-2 border-white object-cover"
+                                data-alt="Close-up portrait of a professional male client smiling confidently against a minimalist blurred background, representing trust and business satisfaction. The lighting is soft and corporate with a clean aesthetic."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGUZQ6DW4p-n4L0vNTHe4DNSAaNjp4WvNCyAeORb1T5CqXLfTzIPOgAAMVRAstSMWtH9ITQoGzMXhy0oAni6_ECZMwy8w2PWusoYGXY_WvHMc80F8Vwo7VjZKZhPSBRnwYVZa4BUMzh32JAfh5TRxKaNiOM7nicB6aC8uTlpmnlo5dMTdhvqC2MbJ06IHvlyS02WgahhUaDBkwT6HK469RYUXXXkCCIUgfUt1Sauz19aiH5v20Qr0moZGJKtEIz5oOZ5DdsZ1vgQ" />
+                            <img class="w-10 h-10 rounded-full border-2 border-white object-cover"
+                                data-alt="Professional female executive with a warm smile, positioned in a modern office environment with soft morning light. The image style is minimalist and clean, reinforcing brand reliability and professional growth."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuASqG-y4YAIuMaHjeT2-CjXjGqM11VRkEe-01Nr51ZssfDvj1mmHXZvZmrzxie5DhH-M3HssHTKuxY5ioCqeUUL3PB21FELMW0ysxscbkQmbUSXlr4gxyjLqDRxpie42u_N-2TPTiurMVFdkeRxdUETH1juwzTY-e9TC6NDTjgdRAI9hajRGUgL0oSwKNxQCN76sh_poYwhxUDiILf-ekeVbewxS4r4M4BPNOExOw3S8x7rpMldJ7uHdmlGm727jyudZnXgl655RA" />
+                            <img class="w-10 h-10 rounded-full border-2 border-white object-cover"
+                                data-alt="Portrait of a creative professional in a light-filled studio space, looking directly at the camera. The visual aesthetic is sophisticated and modern, using high-key lighting to emphasize clarity and partnership."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSkviiB4ZRfl_JO-botF93KIebnNAZ-nlh9E3kTQFjge-dYrkjUBR8H-j16n0kUC91-6OpaSJt8SNoZOxMa7-8QNIyIfoHIuu3GidOsyCRA80XYzFtVsRZO3THXwa7m37wKRPnPDzY24dSgPBSTHOYUOfNcRNhT-o9_-asPhWW0Z93iSuA_ET-REJSu53FGRujsweoMLXFNNOLPVkMuMeQZf1jt72l7QccTTW3Ap6fAFPuEEn6mWouQjsK2PciMc_EeXIvWmKwIg" />
+                        </div>
+                        <p class="text-xs font-body-md text-on-surface-variant">Joined by <span
+                                class="font-bold text-teal-600">50+</span> industry leaders this year.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Global Offices/Map Area -->
+            <div class="mt-xl">
+                <div class="rounded-xl overflow-hidden h-[400px] border border-outline-variant relative group">
+                    <div class="absolute inset-0 bg-slate-200 animate-pulse flex items-center justify-center">
+                        <!-- Map Placeholder -->
+                        <div class="text-center">
+                            <span class="material-symbols-outlined text-4xl text-slate-400 mb-2"
+                                data-icon="map">map</span>
+                            <p class="font-label-bold text-slate-500">Interactive Project Map</p>
+                        </div>
+                    </div>
+                    <img class="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+                        data-alt="A sophisticated, high-altitude aerial view of a modern city at dusk with glowing street patterns, representing global connectivity and digital networks. The aesthetic is professional and corporate, using a cool blue and teal color palette to evoke technology and growth."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2Y9TEtBxxQ7LgJgbfLsnz7w3_EeqeaV5pDaL1G3VIfCKLvaHd3u2c1mUE_tLgrlA3q6k-_1cHG1QFFx4sGLrrB-mA6sk5eMjJlnwHF7_x6W5JQX8oBtZkQBrjX7lkl-M79noXGvT-ohSJ_tf1dw0uREaqtuMNjJXA8XZ38dasPHPQ3-eHQxU6KYQRQerNrjE-UepVxDcHmGQZPH8c0XmuQIODss7TX0e2JAfhcrcXtacS0OeK_kqBbybPsWzDgNmpySkdhugdyA" />
+                    <div class="absolute bottom-8 left-8 bg-white p-6 rounded-xl shadow-xl max-w-xs">
+                        <h4 class="font-label-bold text-teal-600 mb-1">Global Strategy</h4>
+                        <p class="font-body-md text-sm text-on-surface">Working with remote-first companies and digital
+                            brands across 12 countries and 4 continents.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-slate-50 dark:bg-slate-950 w-full py-12 border-t border-slate-200 dark:border-slate-800">
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:flex lg:justify-between items-center px-6 md:px-12 max-w-[1280px] mx-auto gap-8">
+            <div class="space-y-2">
+                <span class="text-lg font-bold text-slate-900 dark:text-white font-headline-md">Fahadul Islam
+                    Forhad</span>
+                <p class="text-slate-500 dark:text-slate-500 font-['Manrope'] text-sm">© 2026 Fahadul Islam Forhad.
+                    Strategic Digital Growth.</p>
+            </div>
+            <div class="flex flex-wrap gap-6 lg:gap-12">
+                <a class="text-slate-500 dark:text-slate-500 hover:text-teal-600 dark:hover:text-teal-400 hover:underline transition-all font-['Manrope'] text-sm"
+                    href="#">Services</a>
+                <a class="text-slate-500 dark:text-slate-500 hover:text-teal-600 dark:hover:text-teal-400 hover:underline transition-all font-['Manrope'] text-sm"
+                    href="#">Case Studies</a>
+                <a class="text-slate-500 dark:text-slate-500 hover:text-teal-600 dark:hover:text-teal-400 hover:underline transition-all font-['Manrope'] text-sm"
+                    href="#">Privacy Policy</a>
+                <a class="text-slate-500 dark:text-slate-500 hover:text-teal-600 dark:hover:text-teal-400 hover:underline transition-all font-['Manrope'] text-sm"
+                    href="#">LinkedIn</a>
+                <a class="text-teal-600 dark:text-teal-400 font-semibold hover:underline transition-all font-['Manrope'] text-sm"
+                    href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

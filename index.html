@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+
+    <title>Fahadul Islam Forhad</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#f7f9fb",
+                        "on-primary-fixed": "#131b2e",
+                        "tertiary": "#000000",
+                        "on-tertiary-fixed": "#001f26",
+                        "primary-fixed": "#dae2fd",
+                        "outline": "#76777d",
+                        "primary-fixed-dim": "#bec6e0",
+                        "surface-tint": "#565e74",
+                        "on-secondary-container": "#54647a",
+                        "tertiary-container": "#001f26",
+                        "tertiary-fixed": "#acedff",
+                        "on-background": "#191c1e",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "surface-bright": "#f7f9fb",
+                        "primary": "#000000",
+                        "surface-container-highest": "#e0e3e5",
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "on-surface-variant": "#45464d",
+                        "on-secondary-fixed": "#0b1c30",
+                        "surface-container-high": "#e6e8ea",
+                        "inverse-primary": "#bec6e0",
+                        "on-tertiary-fixed-variant": "#004e5c",
+                        "surface-variant": "#e0e3e5",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#d3e4fe",
+                        "surface-container": "#eceef0",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "background": "#f7f9fb",
+                        "secondary": "#505f76",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#131b2e",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c6c6cd",
+                        "secondary-container": "#d0e1fb",
+                        "on-primary-container": "#7c839b",
+                        "tertiary-fixed-dim": "#4cd7f6",
+                        "on-surface": "#191c1e",
+                        "inverse-surface": "#2d3133",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#d8dadc",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "surface-container-low": "#f2f4f6",
+                        "on-tertiary-container": "#0090a9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "sm": "1rem",
+                        "xs": "0.5rem",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "lg": "3rem",
+                        "xl": "5rem",
+                        "md": "1.5rem",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Manrope"],
+                        "label-bold": ["Inter"],
+                        "display-xl": ["Manrope"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Manrope"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["36px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-bold": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-xl": ["60px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .backdrop-glass {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .text-teal-600 {
+            color: #0090a9;
+        }
+
+        .bg-teal-600 {
+            background-color: #0090a9;
+        }
+    </style>
+</head>
+
+<body class="bg-background font-body-md text-on-surface">
+    <!-- Top Navigation Bar -->
+    <header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200/50 shadow-sm">
+        <nav
+            class="flex justify-between items-center h-20 px-6 md:px-12 max-w-[1280px] mx-auto font-['Manrope'] antialiased">
+            <div class="text-xl font-black tracking-tighter text-slate-900">Fahadul Islam Forhad</div>
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-teal-600 font-bold border-b-2 border-teal-600 pb-1" href="/">Home</a>
+                <a class="text-slate-600 font-medium hover:text-teal-600 transition-colors" href="services.html">Services</a>
+                <a class="text-slate-600 font-medium hover:text-teal-600 transition-colors" href="about.html">About</a>
+                <a s="text-slate-600 font-medium hover:text-teal-600 transition-colors" href="case-studies.html">Case Studies</a>
+                <a class="text-slate-600 font-medium hover:text-teal-600 transition-colors" href="contact.html">Contact</a>
+            </div>
+            <button
+                class="bg-primary text-on-primary px-6 py-3 rounded-xl font-label-bold hover:opacity-90 transition-all duration-200 active:scale-95">
+                Free Audit
+            </button>
+        </nav>
+    </header>
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section
+            class="max-w-[1280px] mx-auto px-6 md:px-12 py-xl flex flex-col md:flex-row items-center gap-12 lg:gap-24">
+            <div class="flex-1 space-y-md text-center md:text-left">
+                <div
+                    class="inline-flex items-center gap-xs px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-label-bold">
+                    <span class="material-symbols-outlined text-[18px]">trending_up</span>
+                    <span>DRIVE PROFITABLE GROWTH</span>
+                </div>
+                <h1 class="font-display-xl text-display-xl text-on-primary-fixed">
+                    Scale Your ROI with <span class="text-teal-600">Meta &amp; Google Ads</span> Strategy.
+                </h1>
+                <p class="font-body-lg text-body-lg text-secondary max-w-xl">
+                    Specializing in high-ticket digital marketing performance. I help ambitious brands turn advertising
+                    spend into predictable, scalable revenue using data-driven funnels.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-sm">
+                    <button
+                        class="bg-teal-600 text-white px-8 py-4 rounded-xl font-label-bold text-lg hover:shadow-lg transition-all active:scale-95">
+                        Claim Your Free Audit
+                    </button>
+                    <button
+                        class="bg-surface-container-high text-on-surface px-8 py-4 rounded-xl font-label-bold text-lg hover:bg-surface-container-highest transition-all">
+                        View Case Studies
+                    </button>
+                </div>
+                <div class="flex items-center gap-4 pt-md justify-center md:justify-start">
+                    <div class="flex -space-x-3">
+                        <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-200"></div>
+                        <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-300"></div>
+                        <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-400"></div>
+                    </div>
+                    <p class="text-sm font-medium text-secondary">Trusted by 50+ Global Brands</p>
+                </div>
+            </div>
+            <div class="flex-1 relative">
+                <div class="relative z-10 rounded-xl overflow-hidden shadow-2xl">
+                    <img alt="Fahadul Islam Forhad"
+                        class="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700"
+                        data-alt="A professional portrait of a male digital marketing expert in a sharp, modern navy suit, sitting in a minimalist high-end office environment. Large windows in the background reveal a soft-focus city skyline at dusk. The lighting is sophisticated and directional, highlighting his confident expression. The overall aesthetic is corporate, clean, and premium, utilizing a color palette of deep navies, whites, and soft teals."
+                        src="assets/forhad.jpeg" />
+                </div>
+                <!-- Growth Chip Overlays -->
+                <div
+                    class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg z-20 border border-slate-100 hidden lg:block">
+                    <div class="flex items-center gap-sm">
+                        <div class="bg-teal-600/10 p-2 rounded-lg">
+                            <span class="material-symbols-outlined text-teal-600">show_chart</span>
+                        </div>
+                        <div>
+                            <p class="text-xs text-secondary font-bold">AVG. ROAS</p>
+                            <p class="text-xl font-black text-on-surface">4.8x</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why Work With Me (Bento Grid) -->
+        <section class="bg-surface-container-low py-xl">
+            <div class="max-w-[1280px] mx-auto px-6 md:px-12">
+                <div class="text-center mb-lg">
+                    <h2 class="font-headline-lg text-headline-lg mb-sm">Why Partner With Me?</h2>
+                    <p class="text-secondary max-w-2xl mx-auto">I don't just run ads; I architect full-funnel growth
+                        ecosystems that prioritize long-term brand equity and immediate cash flow.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                    <!-- Bento Card 1 -->
+                    <div
+                        class="md:col-span-2 bg-white p-lg rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <span class="material-symbols-outlined text-teal-600 text-4xl mb-4">analytics</span>
+                            <h3 class="font-headline-md text-headline-md mb-xs">Data-Driven Decision Making</h3>
+                            <p class="text-secondary">Every dollar of your budget is tracked and optimized based on hard
+                                data. I use advanced attribution modeling to ensure you know exactly where your growth
+                                is coming from.</p>
+                        </div>
+                        <div class="mt-md flex gap-sm">
+                            <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-bold">Meta Attribution</span>
+                            <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-bold">Google Analytics
+                                4</span>
+                            <span class="px-3 py-1 bg-slate-100 rounded-full text-xs font-bold">Server-Side
+                                Tracking</span>
+                        </div>
+                    </div>
+                    <!-- Bento Card 2 -->
+                    <div class="bg-primary text-white p-lg rounded-xl flex flex-col justify-center text-center">
+                        <p class="text-teal-600 font-bold mb-2">PROVEN RESULTS</p>
+                        <div class="text-5xl font-black mb-2">$2M+</div>
+                        <p class="text-on-primary-container text-sm">Managed Ad Spend in 2023</p>
+                        <hr class="my-6 border-slate-800" />
+                        <div class="text-5xl font-black mb-2">120%</div>
+                        <p class="text-on-primary-container text-sm">Avg. Conversion Increase</p>
+                    </div>
+                    <!-- Bento Card 3 -->
+                    <div class="bg-white p-lg rounded-xl border border-slate-200 shadow-sm">
+                        <span class="material-symbols-outlined text-teal-600 text-4xl mb-4">psychology</span>
+                        <h3 class="font-headline-md text-headline-md mb-xs">Psychology-First Creative</h3>
+                        <p class="text-secondary">Ads that stop the scroll. I combine direct-response copywriting with
+                            high-impact visuals to trigger action.</p>
+                    </div>
+                    <!-- Bento Card 4 -->
+                    <div
+                        class="md:col-span-2 bg-white p-lg rounded-xl border border-slate-200 shadow-sm flex flex-col md:flex-row gap-lg items-center">
+                        <div class="flex-1">
+                            <h3 class="font-headline-md text-headline-md mb-xs">Full Funnel Optimization</h3>
+                            <p class="text-secondary">The ad is only half the battle. I optimize your landing pages and
+                                post-click experience to ensure the highest possible conversion rate.</p>
+                        </div>
+                        <div
+                            class="w-full md:w-1/3 h-40 bg-slate-50 rounded-lg overflow-hidden border border-slate-100">
+                            <img alt="Analytics Dashboard" class="w-full h-full object-cover opacity-60"
+                                data-alt="A clean, high-contrast digital analytics dashboard displayed on a sleek tablet screen. The interface shows vibrant green growth charts and conversion metrics against a minimalist white background. The setting is a professional, bright desk with a cup of coffee and a modern keyboard, bathed in natural morning light. The style is crisp, professional, and data-oriented."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_g-HRguEpmWkKOkQUEXrutvqYdg0HcOEgKH1bGayzgZ0v4KAm8dLE1kgoTavAoZlzZAd3NWnNvFw3qYMz0R0B-73YNV5IRHh9Fkd7RNceVkE6vXxUKJGCgfaLwPEs4bedfm8tkzxzmLPY3eSz_bAMDafBhg2VWKfIUnyJd45kUIILdzKfOyz7mlInHnGyvGw2fyG5D2jQng133ngKAY3lYdAJFQtbRSuo1NDdTcybm0VMd2N3CH_xn84dO82j7aDHnp2kp-qH1A" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Snippets of Services -->
+        <section class="py-xl max-w-[1280px] mx-auto px-6 md:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-lg gap-sm">
+                <div class="max-w-xl">
+                    <h2 class="font-headline-lg text-headline-lg mb-sm">Specialized Expertise</h2>
+                    <p class="text-secondary">Strategic services designed for businesses ready to dominate their market
+                        share through aggressive digital expansion.</p>
+                </div>
+                <a class="text-teal-600 font-bold flex items-center gap-xs hover:underline" href="#">
+                    View All Services <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+                <!-- Service 1 -->
+                <div
+                    class="group bg-white p-8 rounded-xl border border-slate-200 hover:border-teal-600 transition-all duration-300">
+                    <div
+                        class="w-14 h-14 bg-surface-container rounded-lg flex items-center justify-center mb-6 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">campaign</span>
+                    </div>
+                    <h4 class="font-headline-md text-headline-md mb-xs">Meta Ads Management</h4>
+                    <p class="text-secondary mb-6">Laser-targeted Facebook and Instagram campaigns built to scale
+                        e-commerce and lead-gen brands.</p>
+                    <ul class="space-y-2 text-sm font-medium text-on-surface">
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-teal-600 text-lg">check_circle</span> Creative
+                            Strategy</li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-teal-600 text-lg">check_circle</span> Advanced
+                            Retargeting</li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-teal-600 text-lg">check_circle</span> CBO/ABO
+                            Optimization</li>
+                    </ul>
+                </div>
+                <!-- Service 2 -->
+                <div
+                    class="group bg-white p-8 rounded-xl border border-slate-200 hover:border-teal-600 transition-all duration-300">
+                    <div
+                        class="w-14 h-14 bg-surface-container rounded-lg flex items-center justify-center mb-6 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">search</span>
+                    </div>
+                    <h4 class="font-headline-md text-headline-md mb-xs">Google Search &amp; Display</h4>
+                    <p class="text-secondary mb-6">Capture high-intent traffic and dominate search results for your most
+                        profitable keywords.</p>
+                    <ul class="space-y-2 text-sm font-medium text-on-surface">
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-teal-600 text-lg">check_circle</span> Keyword
+                            Research</li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-teal-600 text-lg">check_circle</span> Performance
+                            Max Setup</li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-teal-600 text-lg">check_circle</span> Negative
+                            Keyword Sculpting</li>
+                    </ul>
+                </div>
+                <!-- Service 3 -->
+                <div
+                    class="group bg-white p-8 rounded-xl border border-slate-200 hover:border-teal-600 transition-all duration-300">
+                    <div
+                        class="w-14 h-14 bg-surface-container rounded-lg flex items-center justify-center mb-6 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">hub</span>
+                    </div>
+                    <h4 class="font-headline-md text-headline-md mb-xs">Marketing Automation</h4>
+                    <p class="text-secondary mb-6">Connecting the dots between your ads, CRM, and sales team for a
+                        frictionless customer journey.</p>
+                    <ul class="space-y-2 text-sm font-medium text-on-surface">
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-teal-600 text-lg">check_circle</span> CRM
+                            Integration</li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-teal-600 text-lg">check_circle</span> Email
+                            Sequences</li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-teal-600 text-lg">check_circle</span> Lead Scoring
+                            Models</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Free Audit CTA -->
+        <section class="max-w-[1280px] mx-auto px-6 md:px-12 mb-xl">
+            <div
+                class="bg-primary-container rounded-2xl p-lg md:p-xl flex flex-col lg:flex-row items-center gap-lg overflow-hidden relative">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-teal-600/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+                <div class="flex-1 relative z-10 text-center lg:text-left">
+                    <h2 class="font-display-xl text-display-xl text-white mb-sm">Ready to stop guessing?</h2>
+                    <p class="text-on-primary-container text-lg max-w-xl mb-lg">Book a 30-minute growth audit. I'll
+                        personally review your current ad accounts and identify at least 3 immediate opportunities for
+                        scaling.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button
+                            class="bg-teal-600 text-white px-8 py-4 rounded-xl font-label-bold text-lg hover:opacity-90 transition-all">
+                            Book My Free Audit
+                        </button>
+                        <div class="flex items-center gap-xs text-white/60 text-sm justify-center">
+                            <span class="material-symbols-outlined text-teal-600">verified</span>
+                            No commitment required
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full lg:w-1/3 bg-white/5 backdrop-blur-md rounded-xl p-6 border border-white/10 relative z-10">
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-white/80 text-xs font-bold mb-1">YOUR NAME</label>
+                            <input
+                                class="w-full bg-white/10 border-white/20 rounded-lg py-3 px-4 text-white placeholder-white/30 focus:border-teal-600 focus:ring-0"
+                                placeholder="John Doe" type="text" />
+                        </div>
+                        <div>
+                            <label class="block text-white/80 text-xs font-bold mb-1">WORK EMAIL</label>
+                            <input
+                                class="w-full bg-white/10 border-white/20 rounded-lg py-3 px-4 text-white placeholder-white/30 focus:border-teal-600 focus:ring-0"
+                                placeholder="john@company.com" type="email" />
+                        </div>
+                        <div>
+                            <label class="block text-white/80 text-xs font-bold mb-1">MONTHLY AD SPEND</label>
+                            <select
+                                class="w-full bg-white/10 border-white/20 rounded-lg py-3 px-4 text-white focus:border-teal-600 focus:ring-0">
+                                <option class="text-on-surface">$5k - $10k</option>
+                                <option class="text-on-surface">$10k - $50k</option>
+                                <option class="text-on-surface">$50k+</option>
+                            </select>
+                        </div>
+                        <button
+                            class="w-full bg-white text-primary font-bold py-4 rounded-lg hover:bg-slate-100 transition-colors"
+                            type="submit">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-slate-50 border-t border-slate-200 w-full py-12 font-['Manrope'] text-sm">
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:flex lg:justify-between items-center px-6 md:px-12 max-w-[1280px] mx-auto gap-8">
+            <div class="flex flex-col gap-2">
+                <div class="text-lg font-bold text-slate-900">Fahadul Islam Forhad</div>
+                <p class="text-slate-500">© 2026 Fahadul Islam Forhad. Strategic Digital Growth.</p>
+            </div>
+            <div class="flex flex-wrap gap-x-8 gap-y-2">
+                <a class="text-slate-500 hover:text-teal-600 hover:underline transition-all" href="#">Services</a>
+                <a class="text-slate-500 hover:text-teal-600 hover:underline transition-all" href="#">Case Studies</a>
+                <a class="text-slate-500 hover:text-teal-600 hover:underline transition-all" href="#">Privacy Policy</a>
+                <a class="text-slate-500 hover:text-teal-600 hover:underline transition-all" href="#">LinkedIn</a>
+                <a class="text-slate-500 hover:text-teal-600 hover:underline transition-all" href="#">Contact</a>
+            </div>
+            <div class="flex gap-4">
+                <div
+                    class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 cursor-pointer hover:bg-teal-600 hover:text-white transition-all">
+                    <span class="material-symbols-outlined text-[18px]">public</span>
+                </div>
+                <div
+                    class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 cursor-pointer hover:bg-teal-600 hover:text-white transition-all">
+                    <span class="material-symbols-outlined text-[18px]">mail</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
